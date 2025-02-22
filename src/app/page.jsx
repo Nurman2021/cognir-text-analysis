@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { FlipWords } from "@/components/ui/flip-words";
 import { Play } from "lucide-react";
+import { FeatureCard } from "@/components/layout/feature-card";
 
 
 export default function Home() {
@@ -28,7 +29,7 @@ export default function Home() {
         <p className=" text-sm text-gray-500 mt-8">60 Days free trial   .    No credit card required</p>
         <img src="/img/hero-image.png" alt="dashboard example" />
       </div>
-
+      <FeatureCard />
     </main>
   );
 }

@@ -19,3 +19,9 @@ body {
   background-size: cover;
 }
 
+.feature-bg{
+  background: url('/img/gradient-blur.png');
+  background-position: center;
+  background-size: cover;
+}
+

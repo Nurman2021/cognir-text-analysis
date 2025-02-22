@@ -1,5 +1,5 @@
 import "./globals.css";
-import { NavbarPage } from "@/components/layout/NavbarPage";
+import { NavbarPage } from "@/components/layout/navbar-main";
 
 export const metadata = {
   title: "Text Sentyment Analysis",
