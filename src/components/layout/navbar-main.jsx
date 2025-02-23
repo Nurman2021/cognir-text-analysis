@@ -22,7 +22,7 @@ function Navbar({
             <Menu setActive={setActive}>
                 <div className="flex justify-between items-center w-2/5">
                     <Link href={'/'}>
-                        <img src="/svg/logo_black.svg" alt="cognir logo" width={85} />
+                        <img src="/svg/logo_black.svg" alt="cognir logo" className="logo-font h-8" />
                     </Link>
                     <MenuItem setActive={setActive} active={active} item="Product">
                         <div className="flex flex-col space-y-4 text-sm">
