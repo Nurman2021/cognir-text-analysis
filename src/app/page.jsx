@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { FlipWords } from "@/components/ui/flip-words";
 import { Play } from "lucide-react";
 import { FeatureCard } from "@/components/layout/feature-card";
+import { CardFlow } from "@/components/layout/card-flow";
 
 
 export default function Home() {
@@ -30,6 +31,7 @@ export default function Home() {
         <img src="/img/hero-image.png" alt="dashboard example" />
       </div>
       <FeatureCard />
+      <CardFlow />
     </main>
   );
 }

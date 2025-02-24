@@ -6,8 +6,8 @@ export function FeatureCard() {
     return (
         <div className="container mx-auto max-w-5xl py-8 mb-20">
             <p className="text-center font-medium text-base text-gray-600 mb-4 uppercase">Smart & Accurate AI Text Analysis</p>
-            <h1 className=" text-6xl font-normal text-center tracking-wider mb-4">Unlock Insights with</h1>
-            <h1 className=" text-6xl font-normal text-center tracking-wider mb-2">AI-Powered Text Analysis</h1>
+            <h1 className=" text-5xl font-normal text-center tracking-wider mb-4">Unlock Insights with</h1>
+            <h1 className=" text-5xl font-normal text-center tracking-wider mb-2">AI-Powered Text Analysis</h1>
             <p className="text-center text-gray-600 mb-12 tracking-wider">Discover deep insights from text using advanced artificial intelligence. Our solution helps <br /> you identify patterns, understand sentiment, and extract key information automatically.</p>
 
 
