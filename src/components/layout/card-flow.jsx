@@ -10,11 +10,11 @@ export function CardFlow() {
             <CardSkeletonContainer>
                 <Skeleton />
             </CardSkeletonContainer>
-            <CardTitle>Damn good card</CardTitle>
-            <CardDescription>
+            {/* <CardTitle>Damn good card</CardTitle> */}
+            {/* <CardDescription>
                 A card that showcases a set of tools that you use to create your
                 product.
-            </CardDescription>
+            </CardDescription> */}
         </Card>)
     );
 }
@@ -72,9 +72,9 @@ const Skeleton = () => {
             repeatDelay: 1,
         });
     }, []);
+
     return (
-        (<div
-            className="p-8 overflow-hidden h-full relative flex items-center justify-center">
+        <div className="p-8 overflow-hidden h-full relative flex items-center justify-center">
             <div className="flex flex-row flex-shrink-0 justify-center items-center gap-2">
                 <Container className="h-8 w-8 circle-1">
                     <ClaudeLogo className="h-4 w-4 " />
@@ -92,21 +92,29 @@ const Skeleton = () => {
                     <GeminiLogo className="h-4 w-4 " />
                 </Container>
             </div>
-            <div
-                className="h-40 w-px absolute top-20 m-auto z-40 bg-gradient-to-b from-transparent via-cyan-500 to-transparent animate-move">
+            <div className="h-40 w-px absolute top-20 m-auto z-40 bg-gradient-to-b from-transparent via-cyan-500 to-transparent animate-move">
                 <div className="w-10 h-32 top-1/2 -translate-y-1/2 absolute -left-10">
                     <Sparkles />
                 </div>
             </div>
-        </div>)
+        </div>
     );
 };
 const Sparkles = () => {
+    const [isClient, setIsClient] = React.useState(false);
+
+    useEffect(() => {
+        setIsClient(true);
+    }, []);
+
+    if (!isClient) return null;
+
     const randomMove = () => Math.random() * 2 - 1;
     const randomOpacity = () => Math.random();
     const random = () => Math.random();
+
     return (
-        (<div className="absolute inset-0">
+        <div className="absolute inset-0">
             {[...Array(12)].map((_, i) => (
                 <motion.span
                     key={`star-${i}`}
@@ -130,9 +138,10 @@ const Sparkles = () => {
                         borderRadius: "50%",
                         zIndex: 1,
                     }}
-                    className="inline-block bg-black dark:bg-white"></motion.span>
+                    className="inline-block bg-black dark:bg-white"
+                />
             ))}
-        </div>)
+        </div>
     );
 };
 
@@ -267,9 +276,9 @@ export const GeminiLogo = ({
                     r="1"
                     gradientUnits="userSpaceOnUse"
                     gradientTransform="matrix(16.1326 5.4553 -43.70045 129.2322 1.588 6.503)">
-                    <stop offset=".067" stop-color="#9168C0" />
-                    <stop offset=".343" stop-color="#5684D1" />
-                    <stop offset=".672" stop-color="#1BA1E3" />
+                    <stop offset=".067" stopColor="#9168C0" />
+                    <stop offset=".343" stopColor="#5684D1" />
+                    <stop offset=".672" stopColor="#1BA1E3" />
                 </radialGradient>
             </defs>
         </svg>)
@@ -295,10 +304,10 @@ export const MetaIconOutline = ({
                     y2="91.45"
                     gradientTransform="matrix(1, 0, 0, -1, 0, 192)"
                     gradientUnits="userSpaceOnUse">
-                    <stop offset="0" stop-color="#0064e1" />
-                    <stop offset="0.4" stop-color="#0064e1" />
-                    <stop offset="0.83" stop-color="#0073ee" />
-                    <stop offset="1" stop-color="#0082fb" />
+                    <stop offset="0" stopColor="#0064e1" />
+                    <stop offset="0.4" stopColor="#0064e1" />
+                    <stop offset="0.83" stopColor="#0073ee" />
+                    <stop offset="1" stopColor="#0082fb" />
                 </linearGradient>
                 <linearGradient
                     id="linear-gradient-2"
@@ -308,8 +317,8 @@ export const MetaIconOutline = ({
                     y2="126"
                     gradientTransform="matrix(1, 0, 0, -1, 0, 192)"
                     gradientUnits="userSpaceOnUse">
-                    <stop offset="0" stop-color="#0082fb" />
-                    <stop offset="1" stop-color="#0064e0" />
+                    <stop offset="0" stopColor="#0082fb" />
+                    <stop offset="1" stopColor="#0064e0" />
                 </linearGradient>
             </defs>
             <path

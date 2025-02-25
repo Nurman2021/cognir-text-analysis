@@ -7,19 +7,11 @@
   border: 1px red solid;
 } */
 
-@font-face {
-  font-family: vonique;
-  src: url('/font/Vonique.otf');
-}
 
 body {
   font-family: "Inter", serif;
   font-optical-sizing: auto;
  
-}
-
-.logo-font{
-  font-family: vonique;
 }
 
 .hero-tag-gradient{

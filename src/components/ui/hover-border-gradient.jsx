@@ -26,17 +26,13 @@ export function HoverBorderGradient({
   };
 
   const movingMap = {
-    TOP: "radial-gradient(20.7% 50% at 50% 0%, hsl(180, 100%, 50%) 0%, rgba(0, 255, 255, 0) 100%)", // Cyan
-    LEFT: "radial-gradient(16.6% 43.1% at 0% 50%, hsl(180, 100%, 50%) 0%, rgba(0, 255, 255, 0) 100%)", // Cyan
-    BOTTOM:
-      "radial-gradient(20.7% 50% at 50% 100%, hsl(180, 100%, 50%) 0%, rgba(0, 255, 255, 0) 100%)", // Cyan
-    RIGHT:
-      "radial-gradient(16.2% 41.199999999999996% at 100% 50%, hsl(180, 100%, 50%) 0%, rgba(0, 255, 255, 0) 100%)", // Cyan
+    TOP: "radial-gradient(50% 100% at 50% 0%, hsl(240, 100%, 25%) 0%, hsl(180, 100%, 50%) 50%, rgba(0, 255, 255, 0) 100%)", // Navy to Cyan
+    LEFT: "radial-gradient(40% 80% at 0% 50%, hsl(240, 100%, 25%) 0%, hsl(180, 100%, 50%) 50%, rgba(0, 255, 255, 0) 100%)", // Navy to Cyan
+    BOTTOM: "radial-gradient(50% 100% at 50% 100%, hsl(240, 100%, 25%) 0%, hsl(180, 100%, 50%) 50%, rgba(0, 255, 255, 0) 100%)", // Navy to Cyan
+    RIGHT: "radial-gradient(40% 80% at 100% 50%, hsl(240, 100%, 25%) 0%, hsl(180, 100%, 50%) 50%, rgba(0, 255, 255, 0) 100%)", // Navy to Cyan
   };
 
-  const highlight =
-    "radial-gradient(75% 181.15942028985506% at 50% 50%, hsl(180, 100%, 50%) 0%, rgba(0, 255, 255, 0) 100%)"; // Cyan
-
+  const highlight = "radial-gradient(100% 250% at 50% 50%, hsl(240, 100%, 25%) 0%, hsl(180, 100%, 50%) 50%, rgba(0, 255, 255, 0) 100%)";
   useEffect(() => {
     if (!hovered) {
       const interval = setInterval(() => {
