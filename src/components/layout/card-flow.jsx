@@ -2,7 +2,7 @@
 import { animate, motion } from "framer-motion";
 import React, { useEffect } from "react";
 import { cn } from "@/lib/utils";
-import { Brain } from "lucide-react";
+import { BrainCircuit } from "lucide-react";
 
 export function CardFlow() {
     return (
@@ -80,10 +80,10 @@ const Skeleton = () => {
                     <ClaudeLogo className="h-4 w-4 " />
                 </Container>
                 <Container className="h-12 w-12 circle-2">
-                    <Brain className="h-6 w-6 dark:text-white" />
+                    <OpenAILogo className="h-6 w-6 dark:text-white" />
                 </Container>
                 <Container className="circle-3">
-                    <OpenAILogo className="h-8 w-8 dark:text-white" />
+                    <BrainCircuit className="h-8 w-8 dark:text-white" />
                 </Container>
                 <Container className="h-12 w-12 circle-4">
                     <MetaIconOutline className="h-6 w-6 " />

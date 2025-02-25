@@ -12,16 +12,13 @@ export function TechMap() {
             <h1 className="text-2xl text-center font-normal tracking-wider mb-20 ">"AI That Understands: <br />
                 Sentiment Analysis Meets Visual Creativity"</h1>
 
-
-
-
             <div className="grid grid-cols-3 grid-rows-1 gap-6 relative items-center">
 
-                <div className="grid grid-cols-2 grid-rows-1 gap-20 h-full w-full justify-center items-center absolute -z-10">
+                <div className="grid grid-cols-2 grid-rows-1 gap-20 h-full w-full justify-center items-center absolute px-4 -z-10">
                     <HoverBorderGradient containerClassName={'rounded-r-full border-2 border-gray-200'} className={' h-64 w-[30rem] bg-white'} as="div" />
-                    <HoverBorderGradient containerClassName={'rounded-r-full border-2 border-gray-200'} className={' h-64 w-96 bg-white'} as="div" clockwise={false} />
+                    <HoverBorderGradient containerClassName={'rounded-r-full border-2 border-gray-200'} className={' h-64 w-96 bg-white'} as="div" clockwise={true} />
                 </div>
-                <div><CardFlow /></div>
+                <div className="p-1 shadow-md rounded-xl bg-white"><CardFlow /></div>
                 <HoverBorderGradient containerClassName={'rounded-full mx-auto'} className={'bg-white text-black'} as='div'>
                     <div ><img src="/img/logo-circle.png" alt="cognir logo" width={180} /></div>
                 </HoverBorderGradient>
