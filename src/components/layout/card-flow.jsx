@@ -83,7 +83,7 @@ const Skeleton = () => {
                     <OpenAILogo className="h-6 w-6 dark:text-white" />
                 </Container>
                 <Container className="circle-3">
-                    <BrainCircuit className="h-8 w-8 dark:text-white" />
+                    <BrainCircuit className="h-8 w-8 dark:text-white" strokeWidth={1.5} />
                 </Container>
                 <Container className="h-12 w-12 circle-4">
                     <MetaIconOutline className="h-6 w-6 " />

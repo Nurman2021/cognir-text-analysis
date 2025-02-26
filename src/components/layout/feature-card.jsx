@@ -4,7 +4,7 @@ import { HoverBorderGradient } from '../ui/hover-border-gradient';
 
 export function FeatureCard() {
     return (
-        <div className="container mx-auto max-w-5xl py-8 mb-20">
+        <div className="container mx-auto max-w-5xl py-8 px-8 mb-20">
             <p className="text-center font-medium text-base text-gray-600 mb-4 uppercase">Smart & Accurate AI Text Analysis</p>
             <h1 className=" text-5xl font-normal text-center tracking-wider mb-4">Unlock Insights with</h1>
             <h1 className=" text-5xl font-normal text-center tracking-wider mb-2">AI-Powered Text Analysis</h1>

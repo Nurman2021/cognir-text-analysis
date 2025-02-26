@@ -1,5 +1,5 @@
 import "./globals.css";
-import { NavbarPage } from "@/components/layout/navbar-main";
+import { MainNav } from "@/components/layout/main-nav";
 import Footer from "@/components/layout/Footer";
 
 export const metadata = {
@@ -11,7 +11,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="overflow-auto">
-        <NavbarPage />
+        <MainNav />
         {children}
         <Footer />
       </body>

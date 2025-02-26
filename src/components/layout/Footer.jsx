@@ -5,12 +5,12 @@ const Footer = () => {
         <footer className="w-full">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                 {/* <!--Grid--> */}
-                <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-8 py-10 max-sm:max-w-sm max-sm:mx-auto gap-y-8">
+                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 md:gap-8 py-10 max-sm:max-w-sm max-sm:mx-auto gap-y-8">
                     <div className="col-span-full mb-10 lg:col-span-3 lg:mb-0">
                         <div className="flex justify-center lg:justify-start">
                             <img src="/img/logo-text.png" alt="cognir logo" className='w-1/3 logo-font' />
                         </div>
-                        <p className="py-8 text-sm text-gray-500 lg:max-w-xs text-center lg:text-left">Trusted in more than 100 countries & 5 million customers. Have any query ?</p>
+                        <p className="py-8 text-sm text-gray-500 lg:max-w-xs text-center lg:text-left">Trusted in more than 100 countries & 5 million customers. Have any question ?</p>
                         <a href="https://cognir.ai/" target='blank' className="py-2.5 px-5 h-9 block w-fit bg-black rounded-full shadow-sm text-xs text-white mx-auto transition-all  duration-500 hover:bg-black/[0.8] lg:mx-0">
                             Contact us
                         </a>
